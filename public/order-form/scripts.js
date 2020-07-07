@@ -40,7 +40,6 @@ const handleToggleErrorMessage = (errorStatus) => {};
 
 const handleSubmit = (event) => {
   event.preventDefault();
-  console.log(size.value);
   submitButton.disabled = true;
 
   const data = {
@@ -48,7 +47,7 @@ const handleSubmit = (event) => {
     size: size.value,
     givenName: givenName.value,
     surname: surname.value,
-    email: email,
+    email: email.value,
     address: address.value,
     city: city.value,
     province: province.value,
