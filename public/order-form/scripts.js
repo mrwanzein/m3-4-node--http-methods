@@ -67,7 +67,7 @@ const handleSubmit = (event) => {
     .then((data) => {
       const { status, error } = data;
       if (status === 'success') {
-        window.location.href = '/order-confirmed';
+        window.location.href = '/order-confirmation';
       } else if (error) {
         submitButton.disabled = false;
         errorMsg.style.display = 'flex';
